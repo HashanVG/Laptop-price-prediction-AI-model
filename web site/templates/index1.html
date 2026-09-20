@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Laptop Price Predictor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Predicted Price</h1>
+        <p>The predicted price of the laptop is: <strong> Rs. {{ "%.0f"|format(pred) }}</strong></p>
+        <p style="font-size: 14px; color: #666; margin: 10px 0;">Prediction method: {{ model_status }}</p>
+        <div class="inputfield">
+            <button onclick="window.location.href='/'" class="btn">Predict Another Laptop</button>
+        </div>
+    </div>
+</body>
+</html>
+ 

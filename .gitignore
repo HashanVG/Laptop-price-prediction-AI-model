@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+**/__pycache__/
 
 # Virtual Environments
 venv/
@@ -10,10 +11,14 @@ ENV/
 .venv/
 env.bak/
 venv.bak/
+**/venv/
+**/env/
+**/.venv/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
+**/.ipynb_checkpoints/
 
 # IDE and Editor configurations
 .vscode/
@@ -35,8 +40,3 @@ desktop.ini
 *.log
 *.sqlite3
 *.db
-
-# Model checkpoints / Large weights (uncomment if you store models elsewhere)
-# *.pickle
-# *.pkl
-# *.joblib
